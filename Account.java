@@ -18,4 +18,8 @@ public class Account {
 		return balance;
 	}
 	
+	public void deposit(double deposit) {
+		balance=balance+deposit;
+	}
+	
 }
