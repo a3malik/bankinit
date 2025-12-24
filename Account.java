@@ -2,8 +2,8 @@ package bankinit;
 
 public class Account {
 	
-	public String name=null;
-	public double balance=0.0;
+	private String name=null;
+	private double balance=0.0;
 	
 	public Account(String name, double balance) {
 		this.name=name;
