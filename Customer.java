@@ -8,20 +8,18 @@ public class Customer {
 	private String title;
 
 	public Customer (String firstname, String lastname, char gender) {
-		gender=this.gender;
-		firstname=this.firstname;
-		lastname=this.lastname;
 		
-		switch (gender) {
-		case 'M':
-			this.title = "Mr.";
-		case 'F':
-			this.title = "Ms.";
+		this.gender=gender;
+		this.firstname=firstname;
+		this.lastname=lastname;
+		
+		this.title = switch (this.gender) {
+		case 'M' -> "Mr.";
+		case 'F' -> "Ms.";
+		default -> "Hey";
 			
-		}
+		};
 		
-		System.out.printf("%s %s %s",
-				this.get_title(),this.get_firstname(),this.get_lastname());
 	}
 	
 	public String get_title() {
