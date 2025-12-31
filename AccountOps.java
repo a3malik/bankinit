@@ -26,9 +26,9 @@ public class AccountOps {
 		
 		System.out.printf("%s has %.2f%n",account.getName(),account.getBalance());
 		
-		var customer = new Customer("John","Doe",'M');
-		System.out.printf("%s %s %s",
-				customer.get_title(),customer.get_firstname(),customer.get_lastname());
+		//var customer = new Customer("John","Doe",'M');
+		//System.out.printf("%s %s %s",
+		//		customer.get_title(),customer.get_firstname(),customer.get_lastname());
 	}
 
 }
