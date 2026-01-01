@@ -26,12 +26,8 @@ public class Account {
 		return balance;
 	}
 	
-	public void deposit(double deposit_amt) {
-		balance=balance+deposit_amt;
-	}
-	
-	public void withdraw(double withdrawl_amt) {
-		balance=balance-withdrawl_amt;
+	public void setBalance(double balance) {
+		this.balance=balance;
 	}
 	
 }
