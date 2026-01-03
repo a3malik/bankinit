@@ -1,4 +1,5 @@
 package bankinit;
+import java.time.LocalDate;
 
 public class Customer {
 
@@ -6,7 +7,7 @@ public class Customer {
 	private String customerId;
 	private String firstname;
 	private String lastname;
-	private String dateOfBirth;
+	private LocalDate dateOfBirth;
 	private String nationalId;
 	private char gender;
 	private String title;
@@ -25,7 +26,7 @@ public class Customer {
 	public Customer ( String customer_id
 					, String firstname
 					, String lastname
-					, String date_of_birth
+					, LocalDate date_of_birth
 					, String national_id
 					, char gender
 					, String email
@@ -62,7 +63,7 @@ public class Customer {
 	public String get_lastname() {
 		return lastname;
 	}
-	public String get_dateofbirth() {
+	public LocalDate get_dateofbirth() {
 		return dateOfBirth;
 	}
 	public String get_nationalid() {

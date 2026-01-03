@@ -1,4 +1,5 @@
 package bankinit;
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class AccountOps {
@@ -35,10 +36,12 @@ public class AccountOps {
 		
 		System.out.printf("%s has %.2f%n",account.getName(),account.getBalance());
 		
-		var customer = new Customer(null,"John","Doe",null,null,'M'
-									 ,null,null);
-		System.out.printf("%s %s %s",
-				customer.get_title(),customer.get_firstname(),customer.get_lastname());
+		var customer = new Customer(null,"John","Doe",
+				LocalDate.parse("1999-12-22"),null,'M',
+									 null,null);
+		System.out.printf("%s %s %s, %te %<tB %<tY",
+				customer.get_title(),customer.get_firstname(),
+				customer.get_lastname(),customer.get_dateofbirth());
 	}
 
 }
